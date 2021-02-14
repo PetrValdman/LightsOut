@@ -1,8 +1,11 @@
-<p>InteliJ doesnt works!</p>
 <table>
   <tr *ngFor="let column of grid; index as columnInd">
-    <td *ngFor="let cell of column; index as cellInd" (click)="Lightswitch(columnInd,cellInd)" [class.out]="grid[columnInd][cellInd]"> </td>
+    <td *ngFor="let cell of column; index as cellInd" (click)="lightswitch(columnInd,cellInd)" [class.out]="grid[columnInd][cellInd]"> </td>
   </tr>
 </table>
+<button (click)="randomGrid()">Reset</button>
+<p>Turns taken {{turnstaken}}</p>
+<p>Least turns taken {{leastTurnsTaken}}</p>
+
 
 
